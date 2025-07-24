@@ -19,7 +19,7 @@ Event: **Apache Kafka® Meetup – Bangalore**
 
 #### I'm Talking About - `From Real-time Kafka events to Elasticsearch insights`. 
 
-Go thorugh below Repo for Slids, configuration files, setup and other info of this topic. 
+Go thorugh below Repo for Slides, Configuration files, Setup and other info of this topic. 
 
 **REPO-** [Kafka-Elasticsearch-KELK](https://github.com/anchal1313/Kafka-Elasticsearch-KELK.git)
 
