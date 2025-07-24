@@ -1,4 +1,4 @@
-# Kafka-Elasticsearch-ELKK
+# Kafka-Elasticsearch-KELK
 
 ## Real-time Kafka Events to Elasticsearch Insights
 
