@@ -4,13 +4,9 @@
 
 This project demonstrates how to stream real-time data using **Apache Kafka** and analyze it using the **Elastic Stack (ELK)**. It includes a working pipeline that ingests events from Kafka, processes them through Logstash, and visualizes them in Kibana using Elasticsearch as the backend.
 
----
-
 ## Project Goal
 
 To show how Kafka can stream log or event data and how Elasticsearch can help extract meaningful insights from those events in real time.
-
----
 
 ## Kafka Architecture
 
@@ -40,7 +36,6 @@ To show how Kafka can stream log or event data and how Elasticsearch can help ex
 - **Zookeeper (optional for newer versions):**  
   Used for cluster coordination, managing broker metadata, and leader election. Kafka newer versions (>2.8) support KRaft (Kafka Raft metadata mode) without Zookeeper.
 
----
 
 ## Elastic Stack Architecture
 
@@ -77,7 +72,6 @@ To show how Kafka can stream log or event data and how Elasticsearch can help ex
   - Create dashboards, graphs, tables
   - Set up alerting, anomaly detection
 
----
 
 ## Demo Flow
 
@@ -99,41 +93,47 @@ Ensure the following are installed and configured on your machine:
 	•	Kibana: For visualization
 	•	Python: For generating synthetic log data
 
- ## Directory Structure
 
-├── docker-compose.yml
-├── logstash/
-│   └── pipeline/
-│       └── logstash.conf
-├── generate_log_data.py
+## Setup & Configuration
 
-## Setup & Run
+Copy and create the ELK kafka docker compose yml 
 
-Copy the ELK kafka docker compose yml 
-
-
-
-## Configuration
+project elkk/es-kibana-zk-kafka-docker-compose.yml
 
 Create logstash.conf
 
+project elkk/logstash.conf
 
-If you will start the stack logstash will fail to start 
-No config files found in path {:path=>"/usr/share/logstash/pipeline/*"}
+Note: If you will start the stack logstash will fail to start 
+`No config files found in path {:path=>"/usr/share/logstash/pipeline/*"}`
 
 ## Start the ELK + Kafka Stack
 
-docker compose -f 
+docker-compose -f es-kibana-zk-kafka-docker-compose.yml up
 
 > Services: Zookeeper, Kafka, Elasticsearch, Kibana, Logstash
 
-## Validate Kafka UI running on port 560076
+<img width="1127" height="373" alt="Screenshot 2025-07-25 at 12 31 27 AM" src="https://github.com/user-attachments/assets/52b2970c-276f-4633-b7f1-d6affcc8a2cf" />
+
+
+## Validate Kafka UI running on port 5601
 
 Open http://localhost:5601
 
 ## Simulate Log Events
 
-python3 kafka-producer.py
+-Install Kafka Python Library
+
+`pip install kafka-python`
+
+-Create Python Script
+
+project elkk/kafka-producer.py
+
+-Run Python Script
+
+`python3 kafka-producer.py`
+
 
 ## Visualize in Kibana
 
