@@ -4,6 +4,10 @@
 
 This project demonstrates how to stream real-time data using **Apache Kafka** and analyze it using the **Elastic Stack (ELK)**. It includes a working pipeline that ingests events from Kafka, processes them through Logstash, and visualizes them in Kibana using Elasticsearch as the backend.
 
+<img width="1073" height="231" alt="Screenshot 2025-07-24 at 10 31 22 AM" src="https://github.com/user-attachments/assets/5241c29b-4832-4d19-9706-86add40e69db" />
+
+
+
 ---
 
 ## Project Goal
