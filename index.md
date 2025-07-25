@@ -21,7 +21,7 @@ Event: **Apache Kafka® Meetup – Bangalore**
 
 Go thorugh below Repo for Slides, Configuration files, Setup and other info of this topic. 
 
-**REPO-** [Kafka-Elasticsearch-KELK](https://github.com/AnchalSharma-dev/Kafka-Elasticsearch-KELK.git)
+## ➜ **GIT REPO-** [Kafka-Elasticsearch-KELK](https://github.com/AnchalSharma-dev/Kafka-Elasticsearch-KELK.git)
 
 ----
 
