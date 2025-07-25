@@ -121,9 +121,10 @@ Open your browser:
 
 ### Simulate Log Events
 
-* Install Kafka Python library:
+* Install Kafka Python library(For MAC system) :
 
-`pip install kafka-python`
+`python3 -m ensurepip --upgrade`
+`python3 -m pip install kafka-python`
 
 * Create Python producer script:
 
