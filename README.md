@@ -156,7 +156,7 @@ Open your browser:
 
 🙌 Author
 
-Maintained by [Your Name]
+Maintained by [Anchal Sharma](https://www.linkedin.com/in/anchal-sharma-a5256693)
 
 ---
 
